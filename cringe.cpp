@@ -144,32 +144,6 @@ void help() {
 	cout << "\n\nНажми любую кнопку чтобы вернуться в меню.";
 	_getch();
 } // Окошко с помощью
-// Навалил кринжа
-void play();
-
-int main() {
-	setlocale(LC_ALL, "Russian");
-	setcursor(0, 0);
-	srand((unsigned)time(NULL));
-	while(1) {
-		system("cls");
-		SetConsoleTextAttribute(console, FOREGROUND_GREEN | FOREGROUND_INTENSITY);
-		gotoxy(10, 5); cout << " -------------------------- ";
-		gotoxy(10, 6); cout << " |     Пивная птичка      | ";
-		gotoxy(10, 7); cout << " --------------------------";
-		SetConsoleTextAttribute(console, FOREGROUND_BLUE | FOREGROUND_INTENSITY);
-		gotoxy(10, 9); cout << "1. Словить тильт";
-		gotoxy(10, 10); cout << "2. Как играть?";
-		gotoxy(10, 11); cout << "3. Выйти из консольки";
-		SetConsoleTextAttribute(console, FOREGROUND_GREEN | FOREGROUND_INTENSITY);
-		gotoxy(10, 13); cout << "Введи цифру от 1 до 3: ";
-		char op = _getche();
-		if (op == '1') play();
-		else if (op == '2') help();
-		else if (op == '3') exit(0);
-	}
-	return 0;
-}
 
 void play() {
 	birdPos = 6;
@@ -232,4 +206,28 @@ void play() {
 			gapPos[0] = gapPos[1];
 		}
 	}
+} // Навалил кринжа
+
+int main() {
+	setlocale(LC_ALL, "Russian");
+	setcursor(0, 0);
+	srand((unsigned)time(NULL));
+	while(1) {
+		system("cls");
+		SetConsoleTextAttribute(console, FOREGROUND_GREEN | FOREGROUND_INTENSITY);
+		gotoxy(10, 5); cout << " -------------------------- ";
+		gotoxy(10, 6); cout << " |     Пивная птичка      | ";
+		gotoxy(10, 7); cout << " --------------------------";
+		SetConsoleTextAttribute(console, FOREGROUND_BLUE | FOREGROUND_INTENSITY);
+		gotoxy(10, 9); cout << "1. Словить тильт";
+		gotoxy(10, 10); cout << "2. Как играть?";
+		gotoxy(10, 11); cout << "3. Выйти из консольки";
+		SetConsoleTextAttribute(console, FOREGROUND_GREEN | FOREGROUND_INTENSITY);
+		gotoxy(10, 13); cout << "Введи цифру от 1 до 3: ";
+		char op = _getche();
+		if (op == '1') play();
+		else if (op == '2') help();
+		else if (op == '3') exit(0);
+	}
+	return 0;
 }
