@@ -232,3 +232,4 @@ int main() {
 	return 0;
 } // https://drive.google.com/drive/folders/1uLR7bCBXwraaLCXnnXn3_iuQL3AqLxkB?usp=sharing
 // https://docs.google.com/document/d/1vtbMHPPkKMDfc0AykarOs_3Kvk1ku2dK/edit?usp=sharing&ouid=108777646462001550507&rtpof=true&sd=true
+// https://docs.google.com/document/d/1PYNhX2t4IA-J5ro29eiEnireeZgK-gml/edit?usp=sharing&ouid=108777646462001550507&rtpof=true&sd=true
